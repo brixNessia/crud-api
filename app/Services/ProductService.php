@@ -63,7 +63,6 @@ class ProductService
         DB::beginTransaction();
 
         try {
-            // retrieve company
             $products = $this->product->where('id',$id)->first();
             $products->delete();
 
